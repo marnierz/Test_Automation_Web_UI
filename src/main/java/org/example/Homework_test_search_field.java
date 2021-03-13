@@ -25,14 +25,11 @@ public class Homework_test_search_field {
 
         login();
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-popup-blocking");
-        options.addArguments("--disable-notifications");
 
 
         //клик на строку поиска
 
-        WebElement search = driver.findElement(By.xpath(".//input[@class='search-field__input_' and name='q']"));
+        WebElement search = driver.findElement(By.xpath("//input[@type='search' and @name='q']"));
         search.sendKeys("сагоскатт");
 //<input type="search" name="q" maxlength="150" class="search-field__input " spellcheck="false"
 // aria-label="Искать товары, новинки и вдохновение" aria-placeholder="Искать товары, новинки и вдохновение"
@@ -53,6 +50,6 @@ public class Homework_test_search_field {
         WebElement loginButton = driver.findElement(By.xpath(".//button[@class='btn btn--transactional sc-dxgOiQ sc-eNQAEJ cDdCyP']"));
         loginButton.click();
 
-        driver.quit();
+
     }
 }

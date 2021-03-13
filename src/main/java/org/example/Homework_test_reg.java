@@ -31,7 +31,7 @@ public class Homework_test_reg {
        WebElement loginButton = driver.findElement(By.xpath(".//button[@class='btn btn--transactional sc-dxgOiQ sc-eNQAEJ cDdCyP']"));
         loginButton.click();
         Thread.sleep(4000);
-        driver.quit();
+
 
     }
 }
